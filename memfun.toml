@@ -1,0 +1,18 @@
+[project]
+name = "mathlib-demo"
+
+[llm]
+provider = "openai-compat"
+model = "Qwen/Qwen2.5-Coder-32B-Instruct-AWQ"
+api_key_env = "RUNPOD_API_KEY"
+base_url = "https://api.runpod.ai/v2/wgdnnkoxyt5281/openai/v1"
+temperature = 0.0
+max_tokens = 4096
+
+[backend]
+tier = "sqlite"
+
+[workflow]
+auto_commit = true
+auto_push = true
+gh_pr = true
